@@ -1,0 +1,24 @@
+<div class="Absolute-Center is-Responsive">
+    <form class="login-form" [formGroup]="updateForm" (ngSubmit)="submitUpdateForm()">
+        <div style="display: flex; ">
+            <div class="form-group" style="margin-right: 0.5rem;">
+                <label>Firstname</label>
+                <input class="form-control" type="text" formControlName="firstName" placeholder="Firstname">
+            </div>
+            <div class="form-group">
+                <label>Lastname</label>
+                <input class="form-control" type="text" formControlName="lastName" placeholder="Lastname">
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="text" formControlName="email" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <button class="btn btn-primary" [disabled]="!updateForm.valid" type="submit">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

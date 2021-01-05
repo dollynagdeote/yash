@@ -1,0 +1,31 @@
+<div style="padding: 20px;">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FirstName</th>
+          <th scope="col">LastName</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of userList">
+          <th scope="row">{{user.id}}</th>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.password}}</td>
+          <td>
+              <button class="btn btn-primary" (click)="editProfile(user.id)" style="width: 100px;">
+                  Edit
+              </button>
+              <button class="btn btn-danger" (click)="deleteUser(user.id)" style="width: 100px; float: right;">
+                Delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+</div>

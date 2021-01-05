@@ -1,0 +1,19 @@
+.Absolute-Center {
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.Absolute-Center.is-Responsive {
+    width: 60%; 
+    height: 80%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.login-form {
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
